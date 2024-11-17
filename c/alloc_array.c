@@ -7,6 +7,10 @@ int main()
     int i;
 
     a = malloc(10 * sizeof(int));
+    if (!a) {
+        return -1;
+    }
+
     for (i = 0; i < 10; i ++) {
         a[i] = i;
     }
